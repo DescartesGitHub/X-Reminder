@@ -6,5 +6,6 @@ public class Launcher {
         ApplicationCore appCore = new ApplicationCore();
         appCore.initComponents();
         appCore.createComponents();
+        appCore.modifyComponents();
     }
 }
