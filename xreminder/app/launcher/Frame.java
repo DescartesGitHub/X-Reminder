@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import lombok.Getter;
 
 @Getter
-public class Frame extends JFrame {
+class Frame extends JFrame {
 
     private final String TITLE;
     private final int WIDTH;
