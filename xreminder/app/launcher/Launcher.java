@@ -1,11 +1,16 @@
 package xreminder.app.launcher;
 
+import javax.swing.SwingUtilities;
+
 public class Launcher {  
     
     public static void main(String [] args) {
         ApplicationCore appCore = new ApplicationCore();
-        appCore.initComponents();
-        appCore.createComponents();
-        appCore.modifyComponents();
+        SwingUtilities.invokeLater(() -> {
+            appCore.initComponents();
+            appCore.setComponents();
+            appCore.modifyComponents();
+        });
+        
     }
 }

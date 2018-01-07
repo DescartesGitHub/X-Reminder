@@ -15,10 +15,9 @@ class ApplicationCore {
         initPanels();
     }
 
-    void createComponents() {
+    void setComponents() {
         frame.createFrame();
         createPanels();
-
     }
 
     void modifyComponents() {
